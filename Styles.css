@@ -1,0 +1,66 @@
+html {
+    background:#2E2E2E;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+body {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: none;
+    font-size: 20px;
+}
+section {
+    margin: 30px 0px;
+}
+.container {
+    font-size: 0.9em;
+}
+#sidenav {
+    margin: 30px 0px;
+}
+.tab-pane h6 {
+    width: auto;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #997a00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.tab-content {
+    margin: 10px 8px;
+    background: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 0 10px lightgrey;
+}
+#sidenav li:hover{
+    background: blue;
+    transform: translateX(15px);
+}
+#sidenav li{
+    list-style: none;
+    font-size: 20px;
+    background: grey;
+}
+#sidenav li a{
+    color: white
+}
+.btn.large-btn {
+    width: 150px;
+    background-color: green;
+}
+@media (min-width: 750px) {
+    .tab-content{
+        margin: -500px 200px;
+    }
+    #sidenav {
+        margin: 0px 10px;
+        max-width: 175px;
+        height:500px;
+        background: black;
+        border-radius: 4px 4px 4px 4px;
+        box-shadow: 0 0 10px #FFF;
+
+    }
+}
