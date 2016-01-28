@@ -6,7 +6,7 @@ This project is a Restaurant Reservation System in which customers can submit a 
 The owner can see the list of customers and could assign a table th the customer. 
 The owner has table view and customer view.
 
-//Additional Instructions for execution.
+Additional Instructions for execution.
 
 1\.Run home.html file in Customer Directory
 
