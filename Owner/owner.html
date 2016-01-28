@@ -1,0 +1,69 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="reservation">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Styles.css">
+</head>
+<body>
+<header>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../Customer/home.html">
+                    <span class=""></span>Restaurant Reservation</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right" style="height:5px;" >
+                <li><a href="../Customer/home.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+<section>
+    <div class="container">
+         <ul class="list-group" id="sidenav">
+            <li class="list-group-item active"><a href="#/reserveList"><span class="glyphicon glyphicon-list-alt">
+					           <span class ="tab-text">Reservation </span></a></li>
+
+            <li class="list-group-item"><a  href="#/tableList"><span class="glyphicon glyphicon-th">
+					      <span class ="tab-text">Table List</span></a></li>
+
+            <li class="list-group-item"><a  href="#/settings"><span class="glyphicon glyphicon-wrench">
+					     <span class ="tab-text">Settings </span></a></li>
+
+            <li class="list-group-item"><a  href="#/custList"><span class="glyphicon glyphicon-th-list">
+					     <span class ="tab-text">Customers </span></a></li>
+
+            <li class="list-group-item"><a  href="../Customer/home.html"><span class="glyphicon glyphicon-off">
+					         <span class ="tab-text">Logout </span></a></li>
+
+        </ul>
+        <div id="content" class="tab-content" ng-view>
+
+
+
+         </div>
+    </div>
+</section>
+<script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+<script src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+<script src="ownermain.js"></script>
+<script src="ReserveListController.js"></script>
+<script src="CustomerListController.js"></script>
+<script src="ActionController.js"></script>
+<script src="TableListController.js"></script>
+<script src="ownerService.js"></script>
+
+</body>
+</html>
