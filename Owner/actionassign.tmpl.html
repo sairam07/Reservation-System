@@ -1,0 +1,22 @@
+<div class="tab-pane fade in active" >
+    <h6>Assign Table</h6>
+    <form ng-submit="actionVm.addtable(table)">
+        <div class="form-group">
+    <label>Customer ID: {{actionVm.detail.cust_id}}  </label><br>
+    <label>Customer Name : {{actionVm.detail.firstName}} </label><br>
+    <label>Date : {{actionVm.detail.date}} </label>
+    <label>Time : {{actionVm.detail.time}} </label>
+
+
+      <div class="row">
+        <div class="col-sm-4">
+        <label for="name">Table Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Table Name" ng-model="table.table_name">
+        </div>
+        </div>
+          <button type="submit" class="btn btn-primary" >Assign Table</button>
+
+
+
+    </form>
+</div>
