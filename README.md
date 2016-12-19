@@ -1,5 +1,8 @@
 ###Restaurant Reservation Tool
 
+###Code is not in Master. Code will be found in Branches.
+### Module final - contains both front end and backend code(Server).
+
 The Additional instructions.(This is a single page Application using Angular JS)
 
 This project is a Restaurant Reservation System in which customers can enter their details for reservation and could get an ID for confirmation. The owner can see the list of customers requested for reservations and could assign a table to the customers depending on the availability.The owner also has table view and customer view.
