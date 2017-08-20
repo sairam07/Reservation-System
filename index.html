@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="reservation">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+               integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../Styles.css">
+
+</head>
+<body>
+        <header>
+            <div class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="home.html">
+                            <span class=""></span>Restaurant Reservation</a>
+                    </div>
+
+                        <ul class="nav navbar-nav navbar-right" style="height:5px;" >
+                            <li><a href="home.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                             <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span>Contact Us</a> </li>
+                        </ul>
+                </div>
+            </div>
+
+        </header>
+        <section >
+            <div class="container">
+
+                <ul class="list-group" id="sidenav" >
+                    <li class="list-group-item active"><a  href="#/guest"><span class="glyphicon glyphicon-user"> <span class ="tab-text">Guest</a></li>
+                    <li class="list-group-item"><a  href="#/owner"><span class="glyphicon glyphicon-lock"> <span class ="tab-text">Owner</a></li>
+                </ul>
+                <div id="content" class="tab-content" ng-view>
+
+
+
+                 </div>
+              </div>
+            </section>
+        <script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+        <script src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script src="home.js"></script>
+        <script src="CustomerController.js"></script>
+        <script src="UpdateController.js"></script>
+        <script src="UpdateCustomerController.js"></script>
+        <script src="OwnerLoginController.js"></script>
+        <script src="dataService.js"></script>
+
+</body>
+</html>
