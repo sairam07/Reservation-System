@@ -15,12 +15,12 @@
             })
             .when('/owner', {
                 templateUrl: 'Customer/ownerlogin.tmpl.html',
-                controller: 'Customer/OwnerLoginController',
+                controller: 'OwnerLoginController',
                 controllerAs: 'loginVm'
             })
             .when('/changereserve', {
                 templateUrl: 'Customer/changereserve.tmpl.html',
-                controller: 'Customer/UpdateController',
+                controller: 'UpdateController',
                 controllerAs: 'updateVm'
 
             })
