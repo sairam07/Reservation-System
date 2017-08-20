@@ -1,0 +1,36 @@
+<div class="tab-pane fade in active">
+    <h6>Customers</h6>
+    <nav>
+        <ul class="pager">
+            <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+            <li class="next"><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
+        </ul>
+    </nav>
+    <label>Click On Customer ID for options</label>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th><a href="#"/> CUstomer ID </th>
+                <th> First Name </th>
+                <th> Date </th>
+                <th> Time </th>
+                <th> size </th>
+                <th> Occasion </th>
+                <th> status </th>
+            <tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat ="c in customerListVm.customer">
+                <td><a ng href="#/actions/{{c.cust_id}}">{{c.cust_id}}</td>
+                <td>{{c.firstName}}</td>
+                <td>{{c.date}}</td>
+                <td>{{c.time}}</td>
+                <td>{{c.guests}}</td>
+                <td>{{c.occasion}}</td>
+                <td>{{c.status}}</td>
+            </tr>
+
+        </table>
+    </div>
+</div>

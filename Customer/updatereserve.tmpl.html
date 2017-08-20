@@ -1,0 +1,47 @@
+<div class="tab-pane fade in active" >
+    <h6>Update Reservaton</h6>
+    <form ng-submit="updatecVm.updatecust(custup)">
+        <div class="form-group" >
+            <label>Customer ID: {{updatecVm.customer.cust_id}}  </label><br>
+            <label>Customer Name : {{updatecVm.customer.firstName}} </label><br>
+            <label>Date : {{updatecVm.customer.date}} </label>
+            <label>Time : {{updatecVm.customer.time}} </label><br>
+            <label>Phone : {{updatecVm.customer.phone}} </label><br>
+            <label>Email : {{updatecVm.customer.email}} </label>
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="name">Phone</label>
+                    <input type="text" class="form-control"  placeholder="Phone" ng-model="custup.phone">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                <label for="name">E-mail</label>
+                <input type="text" class="form-control"  placeholder="E-mail" ng-model="custup.email">
+                </div>
+           </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="name">Date</label>
+                    <input type="text" class="form-control"  placeholder="date" ng-model="custup.date">
+                </div>
+                <div class="col-sm-4">
+                    <label for="name">Time</label>
+                    <input type="text" class="form-control"  placeholder="Time" ng-model="custup.time">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="name">Guests</label>
+                    <input type="text" class="form-control"  placeholder="Guests" ng-model="custup.guests">
+                </div>
+            </div>
+            <div class="text-center">
+            <button type="submit" class="btn large-btn btn-primary" value="submit">Update</button>
+            </div>
+
+
+    </form>
+</div>

@@ -1,0 +1,39 @@
+<div class="tab-pane fade in active" >
+    <h6>Table List</h6>
+    <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" class="form-control" id="odate" placeholde="MM/DD/YYYY" >
+        <button type="submit" class="btn large-btn btn-primary" value="reserve"><span class="glyphicon glyphicon-search"></button>
+    </div>
+    <h3><span class="label label-default">Tables Occupied</span></h3>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+            <span class="sr-only">90% Complete (success)</span>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Table</th>
+                <th>Status</th>
+                <th>Time</th>
+                <th>CNF Number</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat ="t in tableListVm.tabdata">
+
+                <td>{{t.table_name}}</td>
+                <td>{{t.status}}</td>
+                <td>{{t.time}}</td>
+                <td>{{t.cust_id}}</td>
+                <td>{{t.date}}</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
