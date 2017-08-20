@@ -10,7 +10,7 @@
 
         $routeProvider
             .when('/guest', {
-                templateUrl: 'customer.tmpl.html',
+                templateUrl: 'Customer/customer.tmpl.html',
 
             })
             .when('/owner', {
